@@ -1,0 +1,16 @@
+.pal {
+  padding: 40px !important;
+}
+.gizli {
+  display: none; /*gizli sınıfını görünmez yaptı sayfa üzerinde*/
+}
+.gizli .form-group {
+  margin-bottom: 10px;
+}
+.uzak {
+  justify-content: space-between;
+}
+.sag {
+  float: right !important;
+  display: flex;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ögrenci Bilgileri</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body class="mx-3">
+    <h1>Öğrenci Kayıt Formu</h1>
+    <div>
+        <form>
+          <div class="alert alert-danger mt-3" role="alert">
+            Bilgilerin eksiksiz ve doğru şekilde olduğundan emin olunuz!
+          </div>
+            <div class="row">
+              <div class="col-md-8" >
+                <label for="name">Adı </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col">
+                <label for="surname">Soyadı </label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="num">Okul Numarası </label>
+                <input type="number" class="form-control" />
+              </div>
+              <div class="col">
+                <label for="telno">Telefon Numarası </label>
+                <input type="number" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="mail">Email </label>
+                <input type="email" class="form-control" name="mail" />
+              </div>
+              <div class="col">
+                <label for="birtday">Doğum Tarihi </label>
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Adres</label>
+              <input type="text" class="form-control" id="address" />
+            </div>
+            </div>
+            <div class="row">
+              <div class="col col-md-6">
+                        <label for="school">Fakülte</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seçiniz...</option>
+                  <option value="1">Mühendislik Fakültesi</option>
+                  <option value="2">Fen Fakültesi</option>
+                  <option value="3">Sağlık Bilimleri Fakültesi</option>
+                </select>
+              </div>
+              <div class="col col-md-4">
+                <label for="bolum">Bölüm</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seçiniz...</option>
+                  <option value="1">Bilgisayar Mühendisliği</option>
+                  <option value="2">Elektronik Mühendisliği</option>
+                  <option value="3">Makine Mühendisliği</option>
+                </select>
+              </div>
+                      <div class="col col-md-2">
+                <label for="sinif">Sınıf</label>
+                <input type="number" class="form-control" id="sinif" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                  <label for="city">Şehir</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seçiniz...</option>
+                    <option value="1">Erzurum</option>
+                    <option value="2">Trabzon</option>
+                    <option value="3">İstanbul</option>
+                  </select>
+              </div>
+              <div class="col">
+                  <label for="posta">Posta Kodu</label>
+              <input type="number" class="form-control" id="posta" />
+              </div>
+            </div>
+            <br>
+            <div>
+              <label for="cinsiyet">Cinsiyet</label>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="cin" id="cin1" value="option1" checked>
+                  <label class="form-check-label" for="cin1">
+                    Kız
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="cin" id="cin2" value="option2">
+                  <label class="form-check-label" for="cin2">
+                    Erkek       
+                   </label>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+          </form>
+    </div>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  
+</html>
